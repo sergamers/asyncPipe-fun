@@ -1,0 +1,8 @@
+{
+  "/api/*": {
+     "target": "http://srvwe159.rccf.ru",
+     "secure": false,
+     "changeOrigin": true,
+     "logLevel": "debug"
+  }
+}
