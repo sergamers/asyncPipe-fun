@@ -1,8 +1,11 @@
 {
   "/api/*": {
-     "target": "http://srvwe159.rccf.ru",
-     "secure": false,
-     "changeOrigin": true,
-     "logLevel": "debug"
+    "target": "http://5de8cdd89578cb001487b490.mockapi.io",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/api": ""
+    }
   }
 }

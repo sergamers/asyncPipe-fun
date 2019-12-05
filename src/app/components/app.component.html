@@ -1,0 +1,48 @@
+<div>
+  <div *ngFor="let user of users$ | async">
+    {{ user.name }}
+  </div>
+
+  <br>
+  <hr> <br>
+
+  <div *ngFor="let user of users$ | async">
+    {{ user | json }}
+  </div>
+
+  <br>
+  <hr> <br>
+
+  <div>
+    {{ user$ | async | json }}
+  </div>
+
+  <br>
+  <hr> <br>
+
+  <div>
+    <ul>
+      <li>{{ (user$ | async)?.name }}</li>
+      <li>{{ (user$ | async)?.phone }}</li>
+    </ul>
+  </div>
+
+  <br>
+  <hr> <br>
+
+
+  <div *ngIf="user$ | async as person">
+    <ul>
+      <li>{{ person.name }}</li>
+      <li>{{ person.phone }}</li>
+    </ul>
+  </div>
+
+  <div>
+    {{ userCash$ | async | json }}
+    <hr>
+    {{ userCash$ | async | json }}
+
+  </div>
+
+</div>
